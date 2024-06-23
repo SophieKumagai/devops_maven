@@ -30,7 +30,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Build with Java
-      run: javac src/Main.java -d out
+      run: javac src/main/java/org/example/Main.java -d out
     - name: Run Java
       run: java -cp out Main
     - name: Mensagem de sucesso
